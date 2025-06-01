@@ -1,4 +1,5 @@
 import './App.css'
+import './AppMobile.css'
 import Icon from '@mdi/react';
 import { mdiMagnify, mdiCartOutline, mdiHomeOutline, mdiBookmarkOutline, mdiBookmarkPlusOutline, mdiSaleOutline,
   mdiInstagram, mdiTwitter, mdiMapMarker
@@ -180,7 +181,7 @@ function Bookstore() {
         <footer>
           <div className='footerPart1'>
             <h1>Bookie</h1>
-            <span>Get in touch with our newsletter</span>
+            <span className='pc'>Get in touch with our newsletter</span>
           </div>
           <hr />
           <div className='footerPart2'>
@@ -190,7 +191,7 @@ function Bookstore() {
               <Icon path={mdiMapMarker} size={1.5}></Icon>
             </div>
             <div className='submitEmail'>
-              <input type="text" />
+              <input type="text" placeholder='example@email.com'/>
               <button>Submit</button>
             </div>
           </div>
